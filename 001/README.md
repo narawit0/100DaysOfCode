@@ -30,3 +30,5 @@ const plusOne = num => num + 1;
 console.log(arr.map(multiplyByTwo)); // [2,4,6,8,10]
 console.log(arr.map(plusOne)); // [2,3,4,5,6,7]
 ```
+
+Array ใน javascript มี property ที่เป็น built in method ที่เป็น HOF ทำให้เราสามารถใส่ function ต่างๆเข้าไปได้เพื่อเปลี่ยนแปลงข้อมูลตามที่ต้องการได้
