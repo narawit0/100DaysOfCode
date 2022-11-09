@@ -24,7 +24,7 @@ console.log(sum.toString());
 ```
 const prototype1 = {
     greet() {
-        console.log('Hello world, this.name');
+        console.log(`Hello world, ${this.name}`);
     }
 }
 
