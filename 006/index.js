@@ -18,3 +18,8 @@ let myRe3 = /[^0-9]/;
 console.log(myRe3.test("Hello, world!")); // true
 console.log(myRe3.test("Hello, w0r1d!")); // true
 console.log(myRe3.test("01234")); // false
+
+console.log(/'\d+'/.test("123")) // true
+console.log(/'\d+'/.test("''")) // false
+console.log(/'\d*'/.test("'123'")) // true
+console.log(/'\d*'/.test("''")) // true

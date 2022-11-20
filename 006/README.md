@@ -73,3 +73,14 @@ console.log(myRe3.test("01234")); // false
 อธิบายก็คือ match ทุกอย่างที่ไม่ใช่ 0-9
 
 
+## Repeating Parts of a Pattern
+ในกรณีที่เราต้องการจะ match pattern มากกว่าหนึ่งตัวเราสามารถใช้ plus (+) ได้ ยกตัวอย่างเช่น /'\d+'/ แปลว่าเราสามารถ match string ของตัวเลขได้มากกว่าหนึ่งตัว
+แต่ในกรณีที่เป็น empty string จะ return false เมื่อเราเรียกใช้ method test ในกรณีนี้ถ้าเราต้องการ match empty ด้วยให้เราเปลี่ยนมาใช้ star (*) แทน
+
+```
+console.log(/'\d+'/.test("123")) // true
+console.log(/'\d+'/.test("''")) // false
+console.log(/'\d*'/.test("'123'")) // true
+console.log(/'\d*'/.test("''")) // true
+```
+
