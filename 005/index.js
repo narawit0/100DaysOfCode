@@ -164,7 +164,7 @@ var roads = [
     }
     console.log(`Robot 1 needed ${total1 / 100} steps per task`);
     console.log(`Robot 2 needed ${total2 / 100} steps per task`);
-    console.log(`Robot 3 needed ${total3 / 100} steps per task`)
+    console.log(`Robot 3 needed ${total3 / 100} steps per task`);
   }
   
   compareRobots(routeRobot, [], goalOrientedRobot, [], lazyRobot, []);

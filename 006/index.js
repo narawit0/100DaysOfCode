@@ -23,3 +23,13 @@ console.log(/'\d+'/.test("123")) // true
 console.log(/'\d+'/.test("''")) // false
 console.log(/'\d*'/.test("'123'")) // true
 console.log(/'\d*'/.test("''")) // true
+
+let ohNoRegex = /oh+(no+)+/i;
+
+console.log(ohNoRegex.test('Ohhhhhhnooooonooooo')); // true
+
+console.log(/^\d+$/.test(1234)); // true
+console.log(/^\d+$/.test('1234s')); // false
+
+console.log(/^a/.test('aeiou')); // true
+console.log(/x$/.test('i love regex')); // true
