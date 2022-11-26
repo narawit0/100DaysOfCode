@@ -10,7 +10,7 @@ let re2 = /abc/;
 
 ทั้งสองตัวแปรข้างต้นทำสิ่งเดียวกัน ก็คือ เช็คว่า string นั้น มีตัวอักษร abc หรือไม่
 
-ใน regex plus sign (+) และ question mark (?) มีความหมายพิเศษในการที่จะนำมาใช้งานกับ regex ถ้าเราต้องการ search pattern ของ string ที่เราเป็นต้องมีเครื่องหมายข้างต้นให้เราทำการใช้ backslash (\) เป็นตัวคั่น 
+ใน regex plus sign (+) และ question mark (?) มีความหมายพิเศษในการที่จะนำมาใช้งานกับ regex ถ้าเราต้องการ search pattern ของ string ที่เราเป็นต้องมีเครื่องหมายข้างต้นให้เราทำการใช้ backslash (\\) เป็นตัวคั่น 
 
 ```
 let myRe = /abc\+/;
@@ -112,4 +112,15 @@ console.log(/^\d+$/.test('1234s')); // false
 
 console.log(/^a/.test('aeiou')); // true
 console.log(/x$/.test('i love regex')); // true
+```
+
+## ข้อแตกต่างระหว่าง () กับ []
+
+() หมายถึง string หรือ text จะต้อง match ทั้งหมดใน group นั้น
+
+[] หมายถึง string หรือ text match อะไรก็ได้ที่อยู่ด้านใน bracket
+
+```
+    console.log(/(abc)/.test('a')); // false
+    console.log(/[abc]/.test('a')); // true
 ```

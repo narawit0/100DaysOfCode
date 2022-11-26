@@ -33,3 +33,6 @@ console.log(/^\d+$/.test('1234s')); // false
 
 console.log(/^a/.test('aeiou')); // true
 console.log(/x$/.test('i love regex')); // true
+
+console.log(/(abc)/.test('a')); // false
+console.log(/[abc]/.test('a')); // true
